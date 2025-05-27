@@ -18,9 +18,8 @@ import pandas as pd
 # ---------------------------------------------------------------------
 # 1.  Paths
 # ---------------------------------------------------------------------
-PKG_DIR   = pathlib.Path(__file__).parent          # …/second_part
-DATA_DIR  = PKG_DIR / "data"
-DATA_PATH = DATA_DIR / "pokemon.csv"
+PKG_DIR   = pathlib.Path(__file__).parent
+DATA_PATH = PKG_DIR.parent / "Project Proposal" / "pokemon.csv"
 
 # ---------------------------------------------------------------------
 # 2.  Data loader (cached per worker)
