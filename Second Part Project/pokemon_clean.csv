@@ -1,0 +1,215 @@
+hp,attack,defense,special-attack,special-defense,speed,name,types,weaknesses,total_stat,role
+80,82,83,100,100,80,Venusaur,"grass, poison","{'fire', 'ice', 'poison', 'flying', 'psychic', 'ground', 'bug'}",525,Support
+78,84,78,109,85,100,Charizard,"fire, flying","{'ice', 'electric', 'water', 'ground', 'rock'}",534,Special Sweeper
+79,83,100,85,105,78,Blastoise,water,"{'electric', 'grass'}",530,Support
+60,45,50,90,80,70,Butterfree,"bug, flying","{'fire', 'ice', 'electric', 'flying', 'rock'}",395,Support
+65,90,40,45,80,75,Beedrill,"bug, poison","{'fire', 'flying', 'psychic', 'ground', 'rock'}",395,Support
+83,80,75,70,70,101,Pidgeot,"normal, flying","{'ice', 'fighting', 'rock', 'electric'}",479,Support
+55,81,60,50,70,97,Raticate,normal,{'fighting'},413,Support
+65,90,65,61,61,100,Fearow,"normal, flying","{'ice', 'fighting', 'rock', 'electric'}",442,Glass Cannon
+60,95,69,65,79,80,Arbok,poison,"{'ground', 'psychic'}",448,Support
+60,90,55,90,80,110,Raichu,electric,{'ground'},485,Physical Sweeper
+75,100,110,45,55,65,Sandslash,ground,"{'ice', 'grass', 'water'}",450,Support
+90,92,87,75,85,76,Nidoqueen,"poison, ground","{'grass', 'ice', 'psychic', 'water', 'ground'}",505,Tank
+81,102,77,85,75,85,Nidoking,"poison, ground","{'grass', 'ice', 'psychic', 'water', 'ground'}",505,Physical Sweeper
+95,70,73,95,90,60,Clefable,fairy,"{'steel', 'poison'}",483,Tank
+73,76,75,81,100,100,Ninetales,fire,"{'ground', 'rock', 'water'}",505,Support
+140,70,45,85,50,45,Wigglytuff,"normal, fairy","{'steel', 'fighting', 'poison'}",435,Support
+75,80,85,110,90,50,Vileplume,"grass, poison","{'fire', 'ice', 'poison', 'flying', 'psychic', 'ground', 'bug'}",490,Support
+60,95,80,60,80,30,Parasect,"bug, grass","{'fire', 'ice', 'poison', 'flying', 'rock', 'bug'}",405,Support
+70,65,60,90,75,90,Venomoth,"bug, poison","{'fire', 'flying', 'psychic', 'ground', 'rock'}",450,Special Sweeper
+35,100,50,50,70,120,Dugtrio,ground,"{'ice', 'grass', 'water'}",425,Glass Cannon
+65,70,60,65,65,115,Persian,normal,{'fighting'},440,Support
+80,82,78,95,80,85,Golduck,water,"{'electric', 'grass'}",500,Special Sweeper
+90,110,80,100,80,95,Arcanine,fire,"{'ground', 'rock', 'water'}",555,Physical Sweeper
+90,95,95,70,90,70,Poliwrath,"water, fighting","{'fairy', 'grass', 'electric', 'flying', 'psychic'}",510,Tank
+55,50,45,135,95,120,Alakazam,psychic,"{'dark', 'ghost', 'bug'}",500,Special Sweeper
+90,130,80,65,85,55,Machamp,fighting,"{'fairy', 'flying', 'psychic'}",505,Tank
+80,105,65,100,70,70,Victreebel,"grass, poison","{'fire', 'ice', 'poison', 'flying', 'psychic', 'ground', 'bug'}",490,Support
+80,70,65,80,120,100,Tentacruel,"water, poison","{'electric', 'grass', 'ground', 'psychic'}",515,Support
+80,120,130,55,65,45,Golem,"rock, ground","{'grass', 'ice', 'fighting', 'water', 'steel', 'ground'}",495,Support
+65,100,70,80,80,105,Rapidash,fire,"{'ground', 'rock', 'water'}",500,Physical Sweeper
+95,75,110,100,80,30,Slowbro,"water, psychic","{'grass', 'ghost', 'electric', 'dark', 'bug'}",490,Tank
+60,110,70,60,60,110,Dodrio,"normal, flying","{'ice', 'fighting', 'rock', 'electric'}",470,Glass Cannon
+90,70,80,70,95,70,Dewgong,"water, ice","{'fire', 'grass', 'fighting', 'electric', 'steel', 'rock'}",475,Tank
+105,105,75,65,100,50,Muk,poison,"{'ground', 'psychic'}",500,Tank
+50,95,180,85,45,70,Cloyster,"water, ice","{'fire', 'grass', 'fighting', 'electric', 'steel', 'rock'}",525,Support
+60,65,60,130,75,110,Gengar,"ghost, poison","{'dark', 'psychic', 'ground', 'ghost'}",500,Special Sweeper
+85,73,70,73,115,67,Hypno,psychic,"{'dark', 'ghost', 'bug'}",483,Support
+55,130,115,50,50,75,Kingler,water,"{'electric', 'grass'}",475,Support
+60,50,70,80,80,150,Electrode,electric,{'ground'},490,Support
+95,95,85,125,75,55,Exeggutor,"grass, psychic","{'fire', 'ice', 'poison', 'ghost', 'flying', 'dark', 'bug'}",530,Tank
+60,80,110,50,80,45,Marowak,ground,"{'ice', 'grass', 'water'}",425,Support
+50,120,53,35,110,87,Hitmonlee,fighting,"{'fairy', 'flying', 'psychic'}",455,Physical Sweeper
+50,105,79,35,110,76,Hitmonchan,fighting,"{'fairy', 'flying', 'psychic'}",455,Support
+65,90,120,85,70,60,Weezing,poison,"{'ground', 'psychic'}",490,Support
+105,95,80,40,80,90,Kangaskhan,normal,{'fighting'},490,Physical Sweeper
+80,92,65,65,80,68,Seaking,water,"{'electric', 'grass'}",450,Support
+60,75,85,100,85,115,Starmie,"water, psychic","{'grass', 'ghost', 'electric', 'dark', 'bug'}",520,Special Sweeper
+65,50,35,115,95,95,Jynx,"ice, psychic","{'fire', 'ghost', 'dark', 'fighting', 'steel', 'rock', 'bug'}",455,Special Sweeper
+65,125,100,55,70,85,Pinsir,bug,"{'rock', 'flying', 'fire'}",500,Physical Sweeper
+75,100,95,40,70,110,Tauros,normal,{'fighting'},490,Physical Sweeper
+95,125,79,60,100,81,Gyarados,"water, flying","{'ice', 'electric', 'grass', 'rock'}",540,Tank
+130,85,80,85,95,60,Lapras,"water, ice","{'fire', 'grass', 'fighting', 'electric', 'steel', 'rock'}",535,Tank
+48,48,48,48,48,48,Ditto,normal,{'fighting'},288,Support
+130,65,60,110,95,65,Vaporeon,water,"{'electric', 'grass'}",525,Tank
+65,65,60,110,95,130,Jolteon,electric,{'ground'},525,Special Sweeper
+65,130,60,95,110,65,Flareon,fire,"{'ground', 'rock', 'water'}",525,Support
+70,60,125,115,70,55,Omastar,"rock, water","{'grass', 'fighting', 'electric', 'water', 'steel', 'ground'}",495,Support
+60,115,105,65,70,80,Kabutops,"rock, water","{'grass', 'fighting', 'electric', 'water', 'steel', 'ground'}",495,Support
+80,105,65,60,75,130,Aerodactyl,"rock, flying","{'grass', 'ice', 'fighting', 'electric', 'water', 'steel', 'ground', 'rock'}",515,Physical Sweeper
+160,110,65,65,110,30,Snorlax,normal,{'fighting'},540,Tank
+80,82,100,83,100,80,Meganium,grass,"{'fire', 'ice', 'poison', 'flying', 'bug'}",525,Support
+78,84,78,109,85,100,Typhlosion,fire,"{'ground', 'rock', 'water'}",534,Special Sweeper
+85,105,100,79,83,78,Feraligatr,water,"{'electric', 'grass'}",530,Support
+85,76,64,45,55,90,Furret,normal,{'fighting'},415,Support
+100,50,50,86,96,70,Noctowl,"normal, flying","{'ice', 'fighting', 'rock', 'electric'}",452,Tank
+55,35,50,55,110,85,Ledian,"bug, flying","{'fire', 'ice', 'electric', 'flying', 'rock'}",390,Support
+70,90,70,60,70,40,Ariados,"bug, poison","{'fire', 'flying', 'psychic', 'ground', 'rock'}",400,Support
+85,90,80,70,80,130,Crobat,"poison, flying","{'ice', 'electric', 'psychic', 'ground', 'rock'}",535,Physical Sweeper
+125,58,58,76,76,67,Lanturn,"water, electric","{'electric', 'grass', 'ground'}",460,Support
+65,75,70,95,70,95,Xatu,"psychic, flying","{'ice', 'electric', 'ghost', 'dark', 'rock', 'bug'}",470,Special Sweeper
+90,75,85,115,90,55,Ampharos,electric,{'ground'},510,Tank
+75,80,95,90,100,50,Bellossom,grass,"{'fire', 'ice', 'poison', 'flying', 'bug'}",490,Support
+100,50,80,60,80,50,Azumarill,"water, fairy","{'steel', 'electric', 'grass', 'poison'}",420,Support
+70,100,115,30,65,30,Sudowoodo,rock,"{'grass', 'fighting', 'water', 'steel', 'ground'}",410,Support
+90,75,75,90,100,70,Politoed,water,"{'electric', 'grass'}",500,Tank
+75,55,70,55,95,110,Jumpluff,"grass, flying","{'fire', 'ice', 'electric', 'poison', 'flying', 'rock', 'bug'}",460,Support
+75,75,55,105,85,30,Sunflora,grass,"{'fire', 'ice', 'poison', 'flying', 'bug'}",425,Support
+95,85,85,65,65,35,Quagsire,"water, ground","{'ice', 'electric', 'grass', 'water'}",430,Tank
+65,65,60,130,95,110,Espeon,psychic,"{'dark', 'ghost', 'bug'}",525,Special Sweeper
+95,65,110,60,130,65,Umbreon,dark,"{'fairy', 'fighting', 'bug'}",525,Tank
+95,75,80,100,110,30,Slowking,"water, psychic","{'grass', 'ghost', 'electric', 'dark', 'bug'}",490,Tank
+48,72,48,72,48,48,Unown,psychic,"{'dark', 'ghost', 'bug'}",336,Support
+190,33,58,33,58,33,Wobbuffet,psychic,"{'dark', 'ghost', 'bug'}",405,Support
+75,90,140,60,60,40,Forretress,"bug, steel","{'fire', 'fighting', 'flying', 'ground', 'rock'}",465,Support
+75,85,200,55,65,30,Steelix,"steel, ground","{'fire', 'grass', 'ice', 'fighting', 'water', 'ground'}",510,Support
+90,120,75,60,60,45,Granbull,fairy,"{'steel', 'poison'}",450,Support
+70,130,100,55,80,65,Scizor,"bug, steel","{'fire', 'fighting', 'flying', 'ground', 'rock'}",500,Support
+20,10,230,10,230,5,Shuckle,"bug, rock","{'fire', 'grass', 'fighting', 'flying', 'water', 'steel', 'ground', 'rock'}",505,Support
+80,125,75,40,95,85,Heracross,"bug, fighting","{'fire', 'fairy', 'flying', 'psychic', 'rock'}",500,Physical Sweeper
+60,50,120,90,80,30,Magcargo,"fire, rock","{'grass', 'fighting', 'water', 'steel', 'ground', 'rock'}",430,Support
+75,105,75,105,75,45,Octillery,water,"{'electric', 'grass'}",480,Support
+45,55,45,65,45,75,Delibird,"ice, flying","{'fire', 'ice', 'fighting', 'electric', 'steel', 'rock'}",330,Support
+85,40,70,80,140,70,Mantine,"water, flying","{'ice', 'electric', 'grass', 'rock'}",485,Support
+65,80,140,40,70,70,Skarmory,"steel, flying","{'fire', 'ice', 'fighting', 'electric', 'ground', 'rock'}",465,Support
+75,90,50,110,80,95,Houndoom,"dark, fire","{'fairy', 'fighting', 'water', 'ground', 'rock', 'bug'}",500,Physical Sweeper
+75,95,95,95,95,85,Kingdra,"water, dragon","{'fairy', 'grass', 'ice', 'electric', 'dragon'}",540,Physical Sweeper
+90,120,120,60,60,50,Donphan,ground,"{'ice', 'grass', 'water'}",500,Tank
+55,20,35,20,45,75,Smeargle,normal,{'fighting'},250,Support
+50,95,95,35,110,70,Hitmontop,fighting,"{'fairy', 'flying', 'psychic'}",455,Support
+95,80,105,40,70,100,Miltank,normal,{'fighting'},490,Tank
+255,10,10,75,135,55,Blissey,normal,{'fighting'},540,Tank
+70,85,65,105,85,120,Sceptile,grass,"{'fire', 'ice', 'poison', 'flying', 'bug'}",530,Special Sweeper
+80,120,70,110,70,80,Blaziken,"fire, fighting","{'fairy', 'flying', 'psychic', 'water', 'ground', 'rock'}",530,Support
+100,110,90,85,90,60,Swampert,"water, ground","{'ice', 'electric', 'grass', 'water'}",535,Tank
+70,90,70,60,60,70,Mightyena,dark,"{'fairy', 'fighting', 'bug'}",420,Support
+60,70,50,100,50,65,Beautifly,"bug, flying","{'fire', 'ice', 'electric', 'flying', 'rock'}",395,Support
+60,50,70,50,90,65,Dustox,"bug, poison","{'fire', 'flying', 'psychic', 'ground', 'rock'}",385,Support
+80,70,70,90,100,70,Ludicolo,"water, grass","{'fire', 'grass', 'ice', 'electric', 'poison', 'flying', 'bug'}",480,Support
+90,100,60,90,60,80,Shiftry,"grass, dark","{'fire', 'fairy', 'ice', 'poison', 'fighting', 'flying', 'bug'}",480,Support
+60,85,60,75,50,125,Swellow,"normal, flying","{'ice', 'fighting', 'rock', 'electric'}",455,Support
+60,50,100,95,70,65,Pelipper,"water, flying","{'ice', 'electric', 'grass', 'rock'}",440,Support
+68,65,65,125,115,80,Gardevoir,"psychic, fairy","{'ghost', 'dark', 'poison', 'steel', 'bug'}",518,Support
+70,60,62,100,82,80,Masquerain,"bug, flying","{'fire', 'ice', 'electric', 'flying', 'rock'}",454,Support
+60,130,80,60,60,70,Breloom,"grass, fighting","{'fire', 'fairy', 'ice', 'poison', 'flying', 'psychic', 'bug'}",460,Support
+61,90,45,50,50,160,Ninjask,"bug, flying","{'fire', 'ice', 'electric', 'flying', 'rock'}",456,Glass Cannon
+1,90,45,30,30,40,Shedinja,"bug, ghost","{'fire', 'ghost', 'flying', 'dark', 'rock'}",236,Support
+104,91,63,91,73,68,Exploud,normal,{'fighting'},490,Support
+144,120,60,40,60,50,Hariyama,fighting,"{'fairy', 'flying', 'psychic'}",474,Support
+70,65,65,55,55,90,Delcatty,normal,{'fighting'},400,Support
+50,75,75,65,65,50,Sableye,"dark, ghost","{'fairy', 'ghost', 'fighting', 'dark', 'bug'}",380,Support
+50,85,85,55,55,50,Mawile,"steel, fairy","{'fire', 'poison', 'fighting', 'steel', 'ground'}",380,Support
+70,110,180,60,60,50,Aggron,"steel, rock","{'fire', 'grass', 'fighting', 'water', 'steel', 'ground'}",530,Support
+60,60,75,60,75,80,Medicham,"fighting, psychic","{'fairy', 'ghost', 'flying', 'psychic', 'dark', 'bug'}",410,Support
+70,75,60,105,60,105,Manectric,electric,{'ground'},475,Glass Cannon
+60,50,40,85,75,95,Plusle,electric,{'ground'},405,Support
+60,40,50,75,85,95,Minun,electric,{'ground'},405,Support
+65,73,75,47,85,85,Volbeat,bug,"{'rock', 'flying', 'fire'}",430,Support
+65,47,75,73,85,85,Illumise,bug,"{'rock', 'flying', 'fire'}",430,Support
+100,73,83,73,83,55,Swalot,poison,"{'ground', 'psychic'}",467,Support
+70,120,40,95,40,95,Sharpedo,"water, dark","{'fairy', 'grass', 'electric', 'fighting', 'bug'}",460,Physical Sweeper
+170,90,45,90,45,60,Wailord,water,"{'electric', 'grass'}",500,Support
+70,100,70,105,75,40,Camerupt,"fire, ground","{'grass', 'ice', 'water', 'ground', 'rock'}",460,Support
+70,85,140,85,70,20,Torkoal,fire,"{'ground', 'rock', 'water'}",470,Support
+80,45,65,90,110,80,Grumpig,psychic,"{'dark', 'ghost', 'bug'}",470,Support
+60,60,60,60,60,60,Spinda,normal,{'fighting'},360,Support
+80,100,80,80,80,100,Flygon,"ground, dragon","{'fairy', 'grass', 'ice', 'dragon', 'water'}",520,Physical Sweeper
+70,115,60,115,60,55,Cacturne,"grass, dark","{'fire', 'fairy', 'ice', 'poison', 'fighting', 'flying', 'bug'}",475,Support
+75,70,90,70,105,80,Altaria,"dragon, flying","{'fairy', 'ice', 'electric', 'dragon', 'rock'}",490,Support
+73,115,60,60,60,90,Zangoose,normal,{'fighting'},458,Physical Sweeper
+73,100,60,100,60,65,Seviper,poison,"{'ground', 'psychic'}",458,Support
+90,55,65,95,85,70,Lunatone,"rock, psychic","{'grass', 'ghost', 'dark', 'fighting', 'water', 'steel', 'ground', 'bug'}",460,Tank
+90,95,85,55,65,70,Solrock,"rock, psychic","{'grass', 'ghost', 'dark', 'fighting', 'water', 'steel', 'ground', 'bug'}",460,Tank
+110,78,73,76,71,60,Whiscash,"water, ground","{'ice', 'electric', 'grass', 'water'}",468,Support
+63,120,85,90,55,55,Crawdaunt,"water, dark","{'fairy', 'grass', 'electric', 'fighting', 'bug'}",468,Support
+60,70,105,70,120,75,Claydol,"ground, psychic","{'grass', 'ice', 'ghost', 'water', 'dark', 'bug'}",500,Support
+86,81,97,81,107,43,Cradily,"rock, grass","{'fire', 'grass', 'ice', 'poison', 'fighting', 'flying', 'water', 'steel', 'ground', 'bug'}",495,Support
+75,125,100,70,80,45,Armaldo,"rock, bug","{'fire', 'grass', 'fighting', 'flying', 'water', 'steel', 'ground', 'rock'}",495,Support
+95,60,79,100,125,81,Milotic,water,"{'electric', 'grass'}",540,Tank
+70,70,70,70,70,70,Castform,normal,{'fighting'},420,Support
+60,90,70,60,120,40,Kecleon,normal,{'fighting'},440,Support
+64,115,65,83,63,65,Banette,ghost,"{'dark', 'ghost'}",455,Support
+99,68,83,72,87,51,Tropius,"grass, flying","{'fire', 'ice', 'electric', 'poison', 'flying', 'rock', 'bug'}",460,Tank
+75,50,80,95,90,65,Chimecho,psychic,"{'dark', 'ghost', 'bug'}",455,Support
+65,130,60,75,60,75,Absol,dark,"{'fairy', 'fighting', 'bug'}",465,Support
+80,80,80,80,80,80,Glalie,ice,"{'steel', 'fighting', 'rock', 'fire'}",480,Support
+110,80,90,95,90,65,Walrein,"ice, water","{'fire', 'grass', 'fighting', 'electric', 'steel', 'rock'}",530,Tank
+55,104,105,94,75,52,Huntail,water,"{'electric', 'grass'}",485,Support
+55,84,105,114,75,52,Gorebyss,water,"{'electric', 'grass'}",485,Support
+100,90,130,45,65,55,Relicanth,"water, rock","{'grass', 'fighting', 'electric', 'water', 'steel', 'ground'}",485,Tank
+43,30,55,40,65,97,Luvdisc,water,"{'electric', 'grass'}",330,Support
+95,109,105,75,85,56,Torterra,"grass, ground","{'fire', 'grass', 'ice', 'poison', 'flying', 'water', 'bug'}",525,Tank
+76,104,71,104,71,108,Infernape,"fire, fighting","{'fairy', 'flying', 'psychic', 'water', 'ground', 'rock'}",534,Glass Cannon
+84,86,88,111,101,60,Empoleon,"water, steel","{'fire', 'grass', 'fighting', 'electric', 'ground'}",530,Support
+85,120,70,50,60,100,Staraptor,"normal, flying","{'ice', 'fighting', 'rock', 'electric'}",485,Glass Cannon
+79,85,60,55,60,71,Bibarel,"normal, water","{'fighting', 'grass', 'electric'}",410,Support
+77,85,51,55,51,65,Kricketune,bug,"{'rock', 'flying', 'fire'}",384,Support
+80,120,79,95,79,70,Luxray,electric,{'ground'},523,Support
+60,70,65,125,105,90,Roserade,"grass, poison","{'fire', 'ice', 'poison', 'flying', 'psychic', 'ground', 'bug'}",515,Special Sweeper
+97,165,60,65,50,58,Rampardos,rock,"{'grass', 'fighting', 'water', 'steel', 'ground'}",495,Support
+60,52,168,47,138,30,Bastiodon,"rock, steel","{'fire', 'grass', 'fighting', 'water', 'steel', 'ground'}",495,Support
+70,94,50,94,50,66,Mothim,"bug, flying","{'fire', 'ice', 'electric', 'flying', 'rock'}",424,Support
+70,80,102,80,102,40,Vespiquen,"bug, flying","{'fire', 'ice', 'electric', 'flying', 'rock'}",474,Support
+60,45,70,45,90,95,Pachirisu,electric,{'ground'},405,Support
+85,105,55,85,50,115,Floatzel,water,"{'electric', 'grass'}",495,Glass Cannon
+70,60,70,87,78,85,Cherrim,grass,"{'fire', 'ice', 'poison', 'flying', 'bug'}",450,Support
+111,83,68,92,82,39,Gastrodon,"water, ground","{'ice', 'electric', 'grass', 'water'}",475,Support
+75,100,66,60,66,115,Ambipom,normal,{'fighting'},482,Glass Cannon
+150,80,44,90,54,80,Drifblim,"ghost, flying","{'ice', 'electric', 'ghost', 'dark', 'rock'}",498,Support
+65,76,84,54,96,105,Lopunny,normal,{'fighting'},480,Support
+60,60,60,105,105,105,Mismagius,ghost,"{'dark', 'ghost'}",495,Special Sweeper
+100,125,52,105,52,71,Honchkrow,"dark, flying","{'fairy', 'ice', 'electric', 'fighting', 'rock', 'bug'}",505,Support
+71,82,64,64,59,112,Purugly,normal,{'fighting'},452,Support
+103,93,67,71,61,84,Skuntank,"poison, dark","{'fairy', 'fighting', 'psychic', 'ground', 'bug'}",479,Support
+67,89,116,79,116,33,Bronzong,"steel, psychic","{'fire', 'ghost', 'fighting', 'dark', 'ground', 'bug'}",500,Support
+76,65,45,92,42,91,Chatot,"normal, flying","{'ice', 'fighting', 'rock', 'electric'}",411,Special Sweeper
+50,92,108,92,108,35,Spiritomb,"ghost, dark","{'fairy', 'ghost', 'fighting', 'dark', 'bug'}",485,Support
+70,110,70,115,70,90,Lucario,"fighting, steel","{'fire', 'fairy', 'fighting', 'flying', 'psychic', 'ground'}",525,Physical Sweeper
+108,112,118,68,72,47,Hippowdon,ground,"{'ice', 'grass', 'water'}",525,Tank
+70,90,110,60,75,95,Drapion,"poison, dark","{'fairy', 'fighting', 'psychic', 'ground', 'bug'}",500,Physical Sweeper
+83,106,65,86,65,85,Toxicroak,"poison, fighting","{'fairy', 'ground', 'flying', 'psychic'}",490,Physical Sweeper
+74,100,72,90,72,46,Carnivine,grass,"{'fire', 'ice', 'poison', 'flying', 'bug'}",454,Support
+69,69,76,69,86,91,Lumineon,water,"{'electric', 'grass'}",460,Support
+90,92,75,92,85,60,Abomasnow,"grass, ice","{'fire', 'ice', 'poison', 'fighting', 'flying', 'steel', 'rock', 'bug'}",494,Tank
+70,120,65,45,85,125,Weavile,"dark, ice","{'fire', 'fairy', 'fighting', 'steel', 'rock', 'bug'}",510,Physical Sweeper
+70,70,115,130,90,60,Magnezone,"electric, steel","{'fighting', 'ground', 'fire'}",535,Support
+110,85,95,80,95,50,Lickilicky,normal,{'fighting'},515,Tank
+115,140,130,55,55,40,Rhyperior,"ground, rock","{'grass', 'ice', 'fighting', 'water', 'steel', 'ground'}",535,Tank
+100,100,125,110,50,50,Tangrowth,grass,"{'fire', 'ice', 'poison', 'flying', 'bug'}",535,Tank
+75,123,67,95,85,95,Electivire,electric,{'ground'},540,Physical Sweeper
+75,95,67,125,95,83,Magmortar,fire,"{'ground', 'rock', 'water'}",540,Support
+85,50,95,120,115,80,Togekiss,"fairy, flying","{'ice', 'poison', 'electric', 'steel', 'rock'}",545,Support
+86,76,86,116,56,95,Yanmega,"bug, flying","{'fire', 'ice', 'electric', 'flying', 'rock'}",515,Special Sweeper
+65,110,130,60,65,95,Leafeon,grass,"{'fire', 'ice', 'poison', 'flying', 'bug'}",525,Physical Sweeper
+65,60,110,130,95,65,Glaceon,ice,"{'steel', 'fighting', 'rock', 'fire'}",525,Support
+75,95,125,45,75,95,Gliscor,"ground, flying","{'grass', 'ice', 'electric', 'water', 'rock'}",510,Physical Sweeper
+110,130,80,70,60,80,Mamoswine,"ice, ground","{'fire', 'grass', 'ice', 'fighting', 'water', 'steel', 'rock'}",530,Support
+85,80,70,135,75,90,Porygon-Z,normal,{'fighting'},535,Special Sweeper
+68,125,65,65,115,80,Gallade,"psychic, fighting","{'fairy', 'ghost', 'flying', 'psychic', 'dark', 'bug'}",518,Support
+60,55,145,75,150,40,Probopass,"rock, steel","{'fire', 'grass', 'fighting', 'water', 'steel', 'ground'}",525,Support
+45,100,135,65,135,45,Dusknoir,ghost,"{'dark', 'ghost'}",525,Support
+70,80,70,80,70,110,Froslass,"ice, ghost","{'fire', 'ghost', 'dark', 'fighting', 'steel', 'rock'}",480,Support
+50,50,77,95,77,91,Rotom,"electric, ghost","{'ghost', 'dark', 'ground'}",440,Special Sweeper
+75,75,95,75,95,113,Serperior,grass,"{'fire', 'ice', 'poison', 'flying', 'bug'}",528,Support
+110,123,65,100,65,65,Emboar,"fire, fighting","{'fairy', 'flying', 'psychic', 'water', 'ground', 'rock'}",528,Support
