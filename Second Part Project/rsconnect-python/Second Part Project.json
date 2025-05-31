@@ -1,0 +1,12 @@
+{
+    "https://api.shinyapps.io": {
+        "server_url": "https://api.shinyapps.io",
+        "filename": "/Users/muzichen/STAT418-Final-Project/Second Part Project",
+        "app_url": "https://ninomyaovo122.shinyapps.io/pokemon-team-optimiser2/",
+        "app_id": 14858741,
+        "app_guid": null,
+        "title": "pokemon-team-optimiser2",
+        "app_mode": "python-shiny",
+        "app_store_version": 1
+    }
+}
