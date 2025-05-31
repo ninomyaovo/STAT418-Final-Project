@@ -10,10 +10,30 @@ Original file is located at
 # app.py  ── minimal Shiny dashboard for the Pokémon optimiser
 from shiny import App, reactive, render, ui
 import pandas as pd
-from optimizer import optimise_team, load_data   # ← uses your CSV
+from optimizer import load_data   # ← uses your CSV
+import ast
+import httpx
+
+API_URL = "https://stat418-final-project-696925248391.europe-west1.run.app/build-team"
 
 df = load_data()          # one-time load (cached in optimizer.py)
 
+# ---------- helper to prettify weaknesses column -------------------
+def _pretty(tbl: pd.DataFrame) -> pd.DataFrame:
+    out = tbl.copy()
+
+    def clean(x):
+        if isinstance(x, set):
+            return ", ".join(sorted(x))
+        try:
+            return ", ".join(sorted(ast.literal_eval(x)))
+        except Exception:
+            return x
+
+    out["weaknesses"] = out["weaknesses"].apply(clean)
+    return out.drop(columns="weak_len", errors="ignore")
+
+# ---------- UI ------------------------------------------------------
 app_ui = ui.page_fluid(
     ui.h2("Pokémon Team Optimiser"),
     ui.layout_sidebar(
@@ -23,26 +43,46 @@ app_ui = ui.page_fluid(
                 "Choose up to 3 starter Pokémon",
                 choices=sorted(df["name"]),
                 multiple=True,
-                max_items=3,
+                #max_items=3,
             ),
-            ui.input_slider("hp_floor", "Minimum HP", 1, 255, 60),
+            ui.hr(),
+            ui.markdown("### Minimum base-stat thresholds"),
+            
+            ui.input_slider("hp_floor", "HP", 1, 170, 60),
+            ui.input_slider("atk_floor",   "Attack",  1, 120, 60),
+            ui.input_slider("def_floor",   "Defense", 1, 120, 60),
+            ui.input_slider("spatk_floor", "Special Attack",  1, 120, 60),
+            ui.input_slider("spdef_floor", "Special Defense", 1, 120, 60),
+            ui.input_slider("spd_floor",   "Speed",           1, 120, 60),
             ui.input_action_button("go", "Generate team"),
         ),
         ui.output_data_frame("team_tbl"),
     ),
 )
 
+# ---------- server --------------------------------------------------
 def server(input, output, session):
     @reactive.event(input.go)          # runs only when button is clicked
     def _team():
-        return optimise_team(
-            starters=input.starter(),
-            hp_floor=input.hp_floor(),
-        )
+        payload = {
+            "starters": (input.starter() or [])[:3],
+            "hp_floor":   input.hp_floor(),
+            "atk_floor":  input.atk_floor(),
+            "def_floor":  input.def_floor(),
+            "spatk_floor":input.spatk_floor(),
+            "spdef_floor":input.spdef_floor(),
+            "spd_floor":  input.spd_floor(),
+        }
+            
+        # POST to Cloud-Run Flask API
+        r = httpx.post(API_URL, json=payload, timeout=30)
+        r.raise_for_status()                # 4xx/5xx → exception in Shiny log
+        return pd.DataFrame(r.json())       # API returns JSON list of dicts
 
     @output
     @render.data_frame
     def team_tbl():
-        return _team()                 # DataFrame appears in UI
+      return _pretty(_team())              # DataFrame appears in UI
 
+# ---------- run app -------------------------------------------------
 app = App(app_ui, server)
