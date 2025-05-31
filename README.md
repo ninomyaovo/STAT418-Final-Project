@@ -17,6 +17,5 @@ There is also a shiny app that can be accessed at()
 # Notes
 Detail of data processing can be found in the "Project Proposal" folder.
 Detail of team selection methods can be found in the "Second Part Project" folder.
-My collected data can be accessed in the final_evolution_pokemon.csv file.
-```My write-up can be accessed in the Gaming_the_System.pdf file.```
+My collected data can be accessed in the pokemon_clean.csv file.
 This project was done mainly for personal use.
