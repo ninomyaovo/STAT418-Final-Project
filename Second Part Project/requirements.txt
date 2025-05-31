@@ -1,3 +1,5 @@
-shiny>=0.6.0,<0.7.0     # Shiny for Python – UI + reactive engine
-pandas>=2.0,<3.0        # Data handling / joins / CSV I/O
-numpy>=1.24,<2.0        # Pandas’ core dependency (explicit for clarity)
+flask>=2.3,<3.0
+shiny>=0.6,<0.8
+httpx>=0.26,<0.28
+pandas>=2.0,<3.0
+numpy>=1.24,<2.0
