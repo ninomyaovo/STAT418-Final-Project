@@ -69,7 +69,7 @@ curl -X POST \
   https://stat418-final-project-696925248391.europe-west1.run.app/build-team
 ```
 The Flask app auto-reads $PORT, so no --set-env-vars required.
-The resulting base URL is used in shiny/app.py → API_URL so graders can trace the connection.
+The resulting base URL is used in app.py → API_URL so user can trace the connection.
 
 ## Deploy to shinyapps.io
 To deploy the app to shinyapps.io, you can obtain your token and use the following code.
