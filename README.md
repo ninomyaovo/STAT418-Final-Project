@@ -12,7 +12,7 @@ To generate a team with the least amount of repetitive weaknesses, I used a gree
 - Selects team members one by one, avoiding overlap in weaknesses when possible.
 
 If the user chooses, they can even pre-select the first few Pokémon manually, and the algorithm will fill the rest with optimal picks based on type balance and minimal redundancy.
-There is also a shiny app that can be accessed at()
+There is also a shiny app that can be accessed at https://ninomyaovo122.shinyapps.io/pokemon-team-optimiser2/
 
 # Notes
 Detail of data processing can be found in the "Project Proposal" folder.
