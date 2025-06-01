@@ -1,13 +1,32 @@
-Update for the Second-phase deliverables.
+Update for the Second-phase deliverables. For the structure of building the app, I separate the original ```STAT418_Final_Project.ipynb``` file into ```optimizer.py``` and ```app.py``` where the first one holds pure logic(data wrangling, optimisation) and second one holds the UI & reactivity. This keeps each file short and testable.
+
 ## Data Update 
-Based on the EDA, I changed the way of assigning roles to each pokemon where I removed the role glass cannon since it basically serves same functionality as physical sweeper and special sweeper (now the roles are tank, physical sweeper, special sweeper, support). I change to rules from giving a range to each role to combining the filtering and checking each pokemon's highest stat. Eg. If a Pokémon’s highest stat was Attack and its speed is more than 75, it became a Physical Sweeper.
-I have also removed legendary pokemons who has high total stats and act like outliers. I uploaded the cleaned data as pokemon_clean.csv for use.
+Based on the EDA, I changed the way of assigning roles to each pokemon. The role Glass Cannon basically serves same functionality as physical sweeper and special sweeper, so I removed it. The project now works with four clear-cut roles:
+
+| Role    | Assign Rule     |
+|----------|----------|
+| Tank| highest stat is hp/ def/ spdef|
+| Physical Sweeper  | attack is highest & speed >= 75   |
+| Special Sweeper  | sp. atk is highest & speed >= 75 |
+| Support  | rest of pokemons |
+
+Also, legendary Pokémon routinely exceed 600 total base stats and distorted early optimisation tests, so I removed it. The resulting, clean dataset lives at ```pokemon_clean.csv``` and is what both the Flask API and the Shiny dashboard load at runtime.
+
 
 ## Model Implementation
-The greedy algorithm serves as the model to select team with least amount of repetitive weaknesses and take roles into consideration by including at least one of each role in the team.
+The greedy algorithm serves as the model to select team with least amount of repetitive weaknesses and take roles into consideration by including at least one of each role in the team. It follows these rules:
+1. Respect the user’s starters – any Pokémon the user picks must appear, even if it violates stat floors or overlaps weaknesses.
+2. Full role coverage – at least one Tank, one Physical Sweeper, one Special Sweeper, and one Support.
+3. Minimise shared type-weaknesses across the final six.
+Because the problem is combinatorial (≈ 10³⁰ possible teams in the full dex!), I use a greedy heuristic that runs in milliseconds but still produces balanced teams in practice.
 
-## App
-For building the app, I separate the original STAT418_Final_Project.ipynb file into optimizer.py and app.py where the first one holds pure logic(data wrangling, optimisation) and app.py holds the UI & reactivity. This keeps each file short and testable.
+### The algorithms steps are:
+1. force-add user-selected starters to the team and track their weaknesses.
+2. From the remaining Pokémon, drop any whose base stats fall below the user’s HP/Atk/Def/SpAtk/SpDef/Speed floors.
+3. For each missing role, pick the candidate that introduces zero new weaknesses. Ties are broken by higher total_stat.
+4. Fill the remaining slots with candidates that add the fewest new weaknesses (marginal cost), again favouring higher stats on ties.
+5. If the pool empties before the team has six members (rare under high stat floors) choose the best-stat leftovers even if they overlap weaknesses.
+6. Convert the internal set-of-weaknesses column to a human-readable comma-separated string, then emit a tidy DataFrame to the API caller.
 
 ## Shiny Dashboard
 To use shiny dashboard, I first installed and run shiny locally. Note that every operation should be done under the path ```"Second Part Project"```.
