@@ -1,4 +1,3 @@
-#api.py
 from flask import Flask, request, jsonify
 from optimizer import optimise_team, load_data
 import os
