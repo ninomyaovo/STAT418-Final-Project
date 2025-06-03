@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "locale": "en_US.UTF-8",
+  "metadata": {
+    "appmode": "python-shiny",
+    "entrypoint": "app"
+  },
+  "python": {
+    "version": "3.9.13",
+    "package_manager": {
+      "name": "pip",
+      "version": "22.2.2",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "f973ed041632d9a653aae04dc0cf7d96"
+    },
+    ".DS_Store": {
+      "checksum": "e60d4844b0ff0b767d2d6f08bd8abd48"
+    },
+    "Dockerfile": {
+      "checksum": "b938b5a8832020158e22cb012c5ed115"
+    },
+    "README.md": {
+      "checksum": "30fa888171293b487b1ef4f5f24a1c3d"
+    },
+    "api.py": {
+      "checksum": "068795771de7cc25dfb8d963f7b52ab4"
+    },
+    "app.py": {
+      "checksum": "d6d7fa8601848d977ffbf2e51b877ffb"
+    },
+    "optimizer.py": {
+      "checksum": "a5f2e03aa3223dd8b4ea6c92b48b8f0b"
+    },
+    "pokemon_clean.csv": {
+      "checksum": "40a923f65de6336a586ca3e78a23e278"
+    }
+  }
+}
