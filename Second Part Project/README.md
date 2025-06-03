@@ -26,7 +26,6 @@ Because the problem is combinatorial (≈ 10³⁰ possible teams in the full dex
 3. For each missing role, pick the candidate that introduces zero new weaknesses. Ties are broken by higher total_stat.
 4. Fill the remaining slots with candidates that add the fewest new weaknesses (marginal cost), again favouring higher stats on ties.
 5. If the pool empties before the team has six members (rare under high stat floors) choose the best-stat leftovers even if they overlap weaknesses.
-6. Convert the internal set-of-weaknesses column to a human-readable comma-separated string, then emit a tidy DataFrame to the API caller.
 
 ## Reproduce the Project
 
