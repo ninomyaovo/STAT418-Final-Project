@@ -1,4 +1,4 @@
-Update for the Second-phase deliverables. For the structure of building the app, I separate the original ```STAT418_Final_Project.ipynb``` file into ```optimizer.py``` and ```app.py``` where the first one holds pure logic(data wrangling, optimisation) and second one holds the UI & reactivity. This keeps each file short and testable.
+This file includes update for the Second-phase deliverables. For the structure of building the app, I separate the original ```STAT418_Final_Project.ipynb``` file into ```optimizer.py``` and ```app.py``` where the first one holds pure logic(data wrangling, optimisation) and second one holds the UI & reactivity. This keeps each file short and testable.
 
 ## Data Update 
 Based on the EDA, I changed the way of assigning roles to each pokemon. The role Glass Cannon basically serves same functionality as physical sweeper and special sweeper, so I removed it. The project now works with four clear-cut roles:
@@ -28,7 +28,14 @@ Because the problem is combinatorial (≈ 10³⁰ possible teams in the full dex
 5. If the pool empties before the team has six members (rare under high stat floors) choose the best-stat leftovers even if they overlap weaknesses.
 6. Convert the internal set-of-weaknesses column to a human-readable comma-separated string, then emit a tidy DataFrame to the API caller.
 
-## Shiny Dashboard
+## Reproduce the Project
+
+### Clone Github Repository
+```
+git clone https://github.com/ninomyaovo/STAT418-Final-Project
+```
+
+### Shiny Dashboard
 To use shiny dashboard, I first installed and run shiny locally. Note that every operation should be done under the path ```"Second Part Project"```.
 ```
 python -m pip install -r "Second Part Project/requirements.txt"
@@ -36,7 +43,7 @@ python -m pip show shiny      # should print version & location
 python -m shiny run --reload app.py
 ```
 
-## Docker Image
+### Docker Image
 After making sure the dashboard runs locally, the next step is to build a docker image and push to docker hub.
 ```
 docker build -t ninomya/stat418-final-project:latest .
@@ -49,7 +56,7 @@ docker buildx create --use
 docker buildx build --platform linux/amd64 -t docker.io/ninomya/stat418-final-project:latest . --push
 ```
 
-## Deploy to Google Cloud Run
+### Deploy to Google Cloud Run
 After creating the google cloud run server, you can run a health check using the API url.
 ```
 curl https://stat418-final-project-696925248391.europe-west1.run.app/health
@@ -71,7 +78,7 @@ curl -X POST \
 The Flask app auto-reads $PORT, so no --set-env-vars required.
 The resulting base URL is used in app.py → API_URL so user can trace the connection.
 
-## Deploy to shinyapps.io
+### Deploy to shinyapps.io
 To deploy the app to shinyapps.io, you can obtain your token and use the following code.
 ```
 pip install rsconnect-python           # installs the publisher
