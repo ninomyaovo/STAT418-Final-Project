@@ -84,7 +84,7 @@ rsconnect add --account USERNAME \
 Generate a manifest & deploy. The ```--new``` ensures you to deploy successfully if you try to redeploy.
 ```
 rsconnect write-manifest shiny .       
-rsconnect deploy shiny . --name USERNAME --title pokemon-team-optimiser2 --new
+rsconnect deploy shiny . --name USERNAME --title pokemon-team-optimiser --new
 ```
 
 These steps can also be found on shinyapps.io --> user guide --> Working with Shiny for Python.
