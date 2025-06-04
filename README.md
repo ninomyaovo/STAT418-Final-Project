@@ -4,10 +4,11 @@ Building a strong team with only 6 slots in a Pokémon team takes a lot to consi
 The data was obtained using an API called pokeapi.co, which provides detailed information on each Pokémon’s stats, types, and evolutionary chain. To ensure quality, only final-evolution Pokémon were included in the pool.
 
 There is also a shiny app that can be accessed at https://ninomyaovo122.shinyapps.io/pokemon-team-optimiser/
-This file includes update for the Second-phase deliverables. For the structure of building the app, I separate the original ```STAT418_Final_Project.ipynb``` file into ```optimizer.py``` and ```app.py``` where the first one holds pure logic(data wrangling, optimisation) and second one holds the UI & reactivity. This keeps each file short and testable.
 
-## Data Update 
-Based on the EDA, I changed the way of assigning roles to each pokemon. The role Glass Cannon basically serves same functionality as physical sweeper and special sweeper, so I removed it. The project now works with four clear-cut roles:
+For the structure of building the app, I separate the original ```STAT418_Final_Project.ipynb``` file into ```optimizer.py``` and ```app.py``` where the first one holds pure logic(data wrangling, optimisation) and second one holds the UI & reactivity. This keeps each file short and testable.
+
+## Role Assigning Feature
+The project works with four clear-cut roles:
 
 | Role    | Assign Rule     |
 |----------|----------|
@@ -15,8 +16,6 @@ Based on the EDA, I changed the way of assigning roles to each pokemon. The role
 | Physical Sweeper  | attack is highest & speed >= 75   |
 | Special Sweeper  | sp. atk is highest & speed >= 75 |
 | Support  | rest of pokemons |
-
-Also, legendary Pokémon routinely exceed 600 total base stats and distorted early optimisation tests, so I removed it. The resulting, clean dataset lives at ```pokemon_clean.csv``` and is what both the Flask API and the Shiny dashboard load at runtime.
 
 
 ## Model Implementation
@@ -102,7 +101,7 @@ rsconnect deploy shiny . --name USERNAME --title pokemon-team-optimiser --new
 These steps can also be found on shinyapps.io --> user guide --> Working with Shiny for Python.
 
 # Notes
-The exploratory data analysis can be found in the "Project Proposal" folder.
+The process of obtaining the data and exploratory data analysis can be found in the "Project Proposal" folder.
 
 The actual data ```pokemon_clean.csv``` can be found in the "Second Part Project" folder.
 
